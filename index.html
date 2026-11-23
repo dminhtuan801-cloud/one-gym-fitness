@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ONE GYM FITNESS – Phòng tập Bắc Ninh</title>
+<meta name="description" content="ONE GYM FITNESS tại đường Đàm Văn Lễ, Nam Sơn, Bắc Ninh. Đăng ký tập thử và nhận tư vấn.">
+<meta property="og:title" content="ONE GYM FITNESS – Bắc Ninh">
+<meta property="og:description" content="Build your strength. Define yourself.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--gold:#D4AF37;--champ:#C5A46D;--char:#242424;--graph:#383838;--lg:#D1D1D1;--white:#fff;--black:#111;--pad:max(20px,5vw);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--black);color:var(--lg);font:400 16px/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;color:var(--white);line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,8vw,6rem);letter-spacing:.02em}
+h2{font-size:clamp(1.9rem,4.5vw,3.2rem);margin-bottom:16px}
+h3{font-size:1.25rem;letter-spacing:.04em}
+a{color:inherit;text-decoration:none}
+section{padding:96px var(--pad)}
+.wrap{max-width:1180px;margin:0 auto}
+.eyebrow{font:600 .78rem Inter,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+.btn{display:inline-block;padding:15px 30px;font:600 .85rem Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--gold);cursor:pointer;transition:.3s;background:transparent;color:var(--white)}
+.btn.gold{background:var(--gold);color:var(--black)}
+.btn.gold:hover{background:var(--champ);transform:translateY(-2px)}
+.btn.line:hover{background:rgba(212,175,55,.12);transform:translateY(-2px)}
+.tbc{display:inline-block;font:600 .65rem Inter,sans-serif;letter-spacing:.14em;color:var(--gold);border:1px dashed var(--gold);padding:2px 8px;margin-bottom:10px}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(18px + env(safe-area-inset-top,0px)) var(--pad) 18px;transition:.35s;display:flex;align-items:center;justify-content:space-between;gap:16px}
+header.solid{background:rgba(17,17,17,.94);backdrop-filter:blur(10px);padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:12px;border-bottom:1px solid var(--graph)}
+.logo{font:700 1.35rem Oswald,sans-serif;letter-spacing:.14em;color:var(--white)}.logo b{color:var(--gold)}
+nav{display:flex;gap:26px;align-items:center}
+nav a{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;transition:.25s}
+nav a:hover{color:var(--gold)}
+.right{display:flex;align-items:center;gap:14px}
+.lang{background:none;border:1px solid var(--graph);color:var(--lg);padding:6px 10px;font:600 .75rem Inter,sans-serif;cursor:pointer}
+.lang span.on{color:var(--gold)}
+.burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer;padding:8px}
+.burger i{display:block;height:2px;background:var(--white);margin:6px 0;transition:.3s}
+.burger.open i:nth-child(1){transform:translateY(8px) rotate(45deg)}.burger.open i:nth-child(2){opacity:0}.burger.open i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+/* hero */
+#home{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 75% 30%,rgba(212,175,55,.16),transparent 55%),repeating-linear-gradient(115deg,#161616 0 38px,#1b1b1b 38px 76px),var(--black)}
+#home::after{content:"";position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(transparent,var(--black))}
+#home .wrap{position:relative;z-index:2;padding-top:60px}
+#home h1 span{color:var(--gold);display:block}
+#home p{max-width:560px;font-size:1.1rem;margin:24px 0 36px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.ring{position:absolute;right:-8vw;top:50%;width:min(52vw,620px);aspect-ratio:1;border:1px solid rgba(212,175,55,.3);border-radius:50%;transform:translateY(-50%);animation:spin 40s linear infinite}
+.ring::before{content:"";position:absolute;inset:12%;border:1px solid rgba(212,175,55,.15);border-radius:50%}
+@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+/* grids */
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.ph{background:linear-gradient(135deg,var(--graph),var(--char));border:1px solid #444;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--champ);font:600 .72rem Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:16px;min-height:220px;position:relative;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:10px;border:1px solid rgba(212,175,55,.25)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:40px}
+.card{background:var(--char);border:1px solid var(--graph);padding:32px 28px;transition:.35s;position:relative}
+.card:hover{border-color:var(--gold);transform:translateY(-6px)}
+.card .n{font:700 2.4rem Oswald,sans-serif;color:var(--gold);opacity:.55}
+.card p{margin:10px 0 0;font-size:.95rem}
+#space{background:var(--char)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:14px;margin-top:40px}
+.gal .ph{min-height:0;cursor:zoom-in;transition:.4s}.gal .ph:hover{border-color:var(--gold);transform:scale(1.015)}
+.gal .a{grid-column:span 2;grid-row:span 2}.gal .b{grid-row:span 2}.gal .c{grid-column:span 2}
+.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:90;display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}.lb img{max-width:100%;max-height:100%}.lb div{color:var(--champ);text-align:center;max-width:420px}
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:40px}
+.plan{background:var(--char);border:1px solid var(--graph);padding:36px 30px;display:flex;flex-direction:column;gap:12px}
+.plan.hot{border-color:var(--gold)}
+.plan .p{font:700 2.2rem Oswald,sans-serif;color:var(--gold)}
+.plan ul{padding-left:18px;margin:0 0 12px;flex:1}
+.rev{border-left:3px solid var(--gold);padding:8px 0 8px 24px;margin-top:30px;max-width:640px}
+details{border-bottom:1px solid var(--graph);padding:20px 0}
+summary{cursor:pointer;font:500 1.05rem Inter,sans-serif;color:var(--white);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:1.5rem;line-height:1;transition:.3s}
+details[open] summary::after{transform:rotate(45deg)}
+details .ans{overflow:hidden;animation:ac .35s ease}
+@keyframes ac{from{opacity:0;transform:translateY(-6px)}}
+details p{margin:12px 0 0}
+#contact{background:var(--char)}
+.cinfo p{margin:0 0 10px}.cinfo strong{color:var(--white)}
+form{display:grid;gap:14px}
+label{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--champ)}
+input,select,textarea{width:100%;background:var(--black);border:1px solid var(--graph);color:var(--white);padding:14px;font:inherit;margin-top:6px;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold)}
+.err{color:#e58b8b;font-size:.8rem;display:none;margin-top:4px}
+.msg{padding:14px;border:1px solid var(--gold);display:none;font-size:.92rem}
+iframe{width:100%;height:300px;border:1px solid var(--graph);margin-top:20px;filter:grayscale(.8) contrast(1.05)}
+footer{padding:36px var(--pad);text-align:center;border-top:1px solid var(--graph);font-size:.85rem}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+.stick{display:none}
+@media(max-width:900px){
+ .burger{display:block}
+ nav{position:fixed;inset:0;background:rgba(17,17,17,.98);flex-direction:column;justify-content:center;gap:28px;transform:translateX(100%);transition:.4s;z-index:-1}
+ nav.open{transform:none}nav a{font-size:1.1rem}
+ .split{grid-template-columns:1fr;gap:36px}
+ section{padding:72px var(--pad)}
+ .hdrcta{display:none}
+ .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gal .a{grid-column:span 2}
+ .ring{opacity:.5}
+ .stick{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(17,17,17,.96);border-top:1px solid var(--graph)}
+ .stick .btn{width:100%;text-align:center}
+ footer{padding-bottom:96px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hd">
+ <a href="#home" class="logo">ONE <b>GYM</b> FITNESS</a>
+ <nav id="nav" aria-label="Main">
+  <a href="#home" data-i="n1">Trang chủ</a><a href="#about" data-i="n2">Giới thiệu</a><a href="#services" data-i="n3">Dịch vụ</a><a href="#space" data-i="n4">Không gian tập luyện</a><a href="#pricing" data-i="n5">Bảng giá</a><a href="#contact" data-i="n6">Liên hệ</a>
+ </nav>
+ <div class="right">
+  <button class="lang" id="lang" aria-label="Language"><span id="lv" class="on">VI</span> | <span id="le">EN</span></button>
+  <a href="#contact" class="btn gold hdrcta" data-i="cta1">Đăng ký tập thử</a>
+  <button class="burger" id="bg" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+ </div>
+</header>
+
+<main>
+<section id="home">
+ <div class="ring" aria-hidden="true"></div>
+ <div class="wrap">
+  <span class="eyebrow" data-i="h0">Bắc Ninh · Premium Fitness</span>
+  <h1>Build your strength.<span>Define yourself.</span></h1>
+  <p data-i="h1">Không chỉ là tập luyện. Đó là hành trình nâng cấp chính mình.</p>
+  <div class="cta"><a href="#contact" class="btn gold" data-i="cta1">Đăng ký tập thử</a><a href="#space" class="btn line" data-i="cta2">Khám phá phòng tập</a></div>
+  <p style="font-size:.75rem;margin-top:28px;opacity:.7" data-i="h2">[Ảnh hero thật của One Gym Fitness: chờ chủ phòng tập cung cấp]</p>
+ </div>
+</section>
+
+<section id="about"><div class="wrap split">
+ <div class="rv">
+  <span class="eyebrow" data-i="a0">Về chúng tôi</span>
+  <h2 data-i="a1">One Gym Fitness</h2>
+  <p data-i="a2">One Gym Fitness là phòng tập tại đường Đàm Văn Lễ, Nam Sơn, Bắc Ninh. Nơi bạn rèn luyện sức mạnh, sức bền và xây dựng thói quen vận động bền vững.</p>
+  <span class="tbc" data-i="tbc">CHỜ XÁC NHẬN</span>
+  <p data-i="a3">Nội dung về diện tích, thiết bị, đội ngũ huấn luyện viên và giá trị dành cho hội viên sẽ được bổ sung sau khi chủ phòng tập xác nhận.</p>
+ </div>
+ <div class="ph rv" style="min-height:380px" data-i="phimg">Ảnh thật – chờ bổ sung</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+ <span class="eyebrow" data-i="s0">Chương trình</span><h2 data-i="s1">Chương trình tập luyện</h2>
+ <span class="tbc" data-i="tbc2">CHỜ XÁC NHẬN DANH SÁCH DỊCH VỤ THỰC TẾ</span>
+ <div class="grid4">
+  <div class="card rv"><div class="n">01</div><h3 data-i="s2">Gym &amp; Strength</h3><p data-i="sd">Mô tả chờ xác nhận từ cơ sở.</p></div>
+  <div class="card rv"><div class="n">02</div><h3 data-i="s3">Cardio Training</h3><p data-i="sd">Mô tả chờ xác nhận từ cơ sở.</p></div>
+  <div class="card rv"><div class="n">03</div><h3 data-i="s4">Personal Training</h3><p data-i="sd">Mô tả chờ xác nhận từ cơ sở.</p></div>
+  <div class="card rv"><div class="n">04</div><h3 data-i="s5">Body Transformation</h3><p data-i="sd">Mô tả chờ xác nhận từ cơ sở.</p></div>
+ </div>
+</div></section>
+
+<section id="space"><div class="wrap">
+ <span class="eyebrow" data-i="f0">Cơ sở vật chất</span><h2 data-i="f1">Không gian tập luyện</h2>
+ <p data-i="f2" style="max-width:640px">Khu vực tạ, hệ thống máy, khu cardio và tiện ích thực tế sẽ được trình bày bằng ảnh thật của phòng tập.</p>
+ <div class="gal" id="gal">
+  <!-- Thêm ảnh thật: <div class="ph a" data-src="images/ten-anh.jpg"> -->
+  <div class="ph a" data-i="g1">Khu vực tạ – chờ ảnh thật</div>
+  <div class="ph b" data-i="g2">Hệ thống máy – chờ ảnh thật</div>
+  <div class="ph" data-i="g3">Khu cardio – chờ ảnh thật</div>
+  <div class="ph c" data-i="g4">Không gian chung – chờ ảnh thật</div>
+  <div class="ph" data-i="g5">Tiện ích – chờ ảnh thật</div>
+ </div>
+</div></section>
+
+<section id="why"><div class="wrap">
+ <span class="eyebrow" data-i="w0">Lý do chọn</span><h2 data-i="w1">Vì sao chọn One Gym</h2>
+ <span class="tbc" data-i="tbc3">CHỜ XÁC NHẬN</span>
+ <div class="grid4">
+  <div class="card rv"><h3 data-i="w2">Không gian</h3><p data-i="wd">Chờ xác nhận.</p></div>
+  <div class="card rv"><h3 data-i="w3">Thiết bị</h3><p data-i="wd">Chờ xác nhận.</p></div>
+  <div class="card rv"><h3 data-i="w4">Đội ngũ hỗ trợ</h3><p data-i="wd">Chờ xác nhận.</p></div>
+  <div class="card rv"><h3 data-i="w5">Vị trí thuận tiện</h3><p data-i="w6">Tọa lạc tại đường Đàm Văn Lễ, Nam Sơn, Bắc Ninh.</p></div>
+ </div>
+</div></section>
+
+<section id="pricing" style="background:var(--char)"><div class="wrap">
+ <span class="eyebrow" data-i="p0">Hội viên</span><h2 data-i="p1">Bảng giá &amp; gói tập</h2>
+ <span class="tbc" data-i="tbc4">CHỜ BẢNG GIÁ CHÍNH THỨC</span>
+ <div class="price">
+  <div class="plan rv"><h3 data-i="p2">Gói theo tháng</h3><div class="p">[ ___ ]</div><ul><li data-i="pq">Quyền lợi: chờ xác nhận</li></ul><a href="#contact" class="btn line" data-i="pb">Đăng ký</a></div>
+  <div class="plan hot rv"><h3 data-i="p3">Gói dài hạn</h3><div class="p">[ ___ ]</div><ul><li data-i="pq">Quyền lợi: chờ xác nhận</li></ul><a href="#contact" class="btn gold" data-i="pb">Đăng ký</a></div>
+  <div class="plan rv"><h3 data-i="p4">Huấn luyện cá nhân</h3><div class="p">[ ___ ]</div><ul><li data-i="pq">Quyền lợi: chờ xác nhận</li></ul><a href="#contact" class="btn line" data-i="pb">Đăng ký</a></div>
+ </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+ <span class="eyebrow" data-i="r0">Hội viên</span><h2 data-i="r1">Trải nghiệm hội viên</h2>
+ <div class="rev"><p data-i="r2">Đánh giá thật sẽ được hiển thị sau khi xác minh. Bạn có thể xem đánh giá hiện có trên Google Maps.</p>
+ <a class="btn line" target="_blank" rel="noopener" href="https://maps.app.goo.gl/4eXNy7vczUAAtD9z8" data-i="r3">Xem trên Google Maps</a></div>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:820px">
+ <span class="eyebrow">FAQ</span><h2 data-i="q0">Câu hỏi thường gặp</h2>
+ <details><summary data-i="q1">Người mới bắt đầu có thể đăng ký tập không?</summary><div class="ans"><p data-i="qa">Chờ cơ sở xác nhận câu trả lời.</p></div></details>
+ <details><summary data-i="q2">Phòng tập có huấn luyện viên hỗ trợ không?</summary><div class="ans"><p data-i="qa">Chờ cơ sở xác nhận câu trả lời.</p></div></details>
+ <details><summary data-i="q3">Có thể đăng ký tập thử không?</summary><div class="ans"><p data-i="qa">Chờ cơ sở xác nhận câu trả lời.</p></div></details>
+ <details><summary data-i="q4">Các gói tập được tính như thế nào?</summary><div class="ans"><p data-i="qa">Chờ cơ sở xác nhận câu trả lời.</p></div></details>
+</div></section>
+
+<section id="contact"><div class="wrap split">
+ <div class="cinfo rv">
+  <span class="eyebrow" data-i="c0">Liên hệ</span><h2 data-i="c1">Đăng ký tập thử</h2>
+  <p><strong data-i="c2">Địa chỉ:</strong> <span data-i="c3">Đường Đàm Văn Lễ, Nam Sơn, Bắc Ninh, Việt Nam</span></p>
+  <p><strong data-i="c4">Điện thoại:</strong> <span class="tbc" data-i="tbc5">CHỜ SỐ ĐIỆN THOẠI</span></p>
+  <p><strong data-i="c5">Giờ mở cửa:</strong> <span class="tbc" data-i="tbc">CHỜ XÁC NHẬN</span></p>
+  <a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=21.1482189,106.114008" data-i="c6">Chỉ đường</a>
+  <iframe loading="lazy" title="One Gym Fitness map" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=21.1482189,106.114008&z=16&output=embed"></iframe>
+ </div>
+ <form id="f" class="rv" novalidate>
+  <div><label for="fn" data-i="l1">Họ và tên</label><input id="fn" required autocomplete="name"><div class="err" data-i="e1">Vui lòng nhập họ tên.</div></div>
+  <div><label for="fp" data-i="l2">Số điện thoại</label><input id="fp" type="tel" required autocomplete="tel" inputmode="tel"><div class="err" data-i="e2">Số điện thoại không hợp lệ.</div></div>
+  <div><label for="fg" data-i="l3">Nhu cầu tập luyện</label><select id="fg"><option data-i="o1">Tập thử</option><option data-i="o2">Tăng cơ / sức mạnh</option><option data-i="o3">Giảm mỡ / thể hình</option><option data-i="o4">Huấn luyện cá nhân</option><option data-i="o5">Khác</option></select></div>
+  <div><label for="fm" data-i="l4">Nội dung cần tư vấn</label><textarea id="fm" rows="4"></textarea></div>
+  <button class="btn gold" type="submit" data-i="l5">Gửi đăng ký</button>
+  <div class="msg" id="msg"></div>
+ </form>
+</div></section>
+</main>
+
+<footer>© 2026 ONE GYM FITNESS · <span data-i="c3">Đường Đàm Văn Lễ, Nam Sơn, Bắc Ninh, Việt Nam</span></footer>
+<div class="stick"><a href="#contact" class="btn gold" data-i="cta1">Đăng ký tập thử</a></div>
+<div class="lb" id="lb"></div>
+
+<script>
+// === CONFIG: dán URL nhận dữ liệu form (Formspree, Google Apps Script, API riêng...) ===
+const FORM_ENDPOINT = "";
+// === i18n: VI lấy từ HTML gốc; thêm ngôn ngữ mới bằng cách thêm khóa vào I18N ===
+const I18N={en:{
+n1:"Home",n2:"About",n3:"Services",n4:"Facilities",n5:"Pricing",n6:"Contact",cta1:"Book a Free Trial",cta2:"Explore the Gym",
+h0:"Bac Ninh · Premium Fitness",h1:"Not just training. It’s a journey to upgrade yourself.",h2:"[Real One Gym Fitness hero photo: awaiting owner]",
+a0:"About us",a1:"One Gym Fitness",a2:"One Gym Fitness is a gym on Dam Van Le Street, Nam Son, Bac Ninh. A place to build strength, endurance and lasting training habits.",
+tbc:"TO BE CONFIRMED",a3:"Details on floor area, equipment, coaching team and member benefits will be added once confirmed by the owner.",phimg:"Real photo – to be added",
+s0:"Programs",s1:"Training programs",tbc2:"ACTUAL SERVICE LIST TO BE CONFIRMED",sd:"Description pending confirmation from the gym.",s2:"Gym & Strength",s3:"Cardio Training",s4:"Personal Training",s5:"Body Transformation",
+f0:"Facilities",f1:"Training space",f2:"Weight area, machines, cardio zone and real amenities will be shown with genuine photos of the gym.",
+g1:"Weight area – photo pending",g2:"Machines – photo pending",g3:"Cardio zone – photo pending",g4:"Common space – photo pending",g5:"Amenities – photo pending",
+w0:"Why us",w1:"Why choose One Gym",tbc3:"TO BE CONFIRMED",w2:"Space",w3:"Equipment",w4:"Support team",w5:"Convenient location",wd:"Pending confirmation.",w6:"Located on Dam Van Le Street, Nam Son, Bac Ninh.",
+p0:"Membership",p1:"Membership & pricing",tbc4:"OFFICIAL PRICES PENDING",p2:"Monthly plan",p3:"Long-term plan",p4:"Personal training",pq:"Benefits: pending confirmation",pb:"Sign up",
+r0:"Members",r1:"Member experience",r2:"Real reviews will appear here once verified. You can see existing reviews on Google Maps.",r3:"View on Google Maps",
+q0:"Frequently asked questions",q1:"Can beginners sign up?",q2:"Are coaches available to help?",q3:"Can I book a free trial?",q4:"How are membership plans priced?",qa:"Answer pending confirmation from the gym.",
+c0:"Contact",c1:"Book a free trial",c2:"Address:",c3:"Dam Van Le Street, Nam Son, Bac Ninh, Vietnam",c4:"Phone:",tbc5:"PHONE NUMBER PENDING",c5:"Opening hours:",c6:"Get directions",
+l1:"Full name",l2:"Phone number",l3:"Training goal",l4:"What would you like advice on?",l5:"Send request",e1:"Please enter your name.",e2:"Invalid phone number.",
+o1:"Free trial",o2:"Muscle / strength",o3:"Fat loss / physique",o4:"Personal training",o5:"Other"},
+msgs:{vi:{ok:"Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.",no:"Biểu mẫu chưa được kết nối hệ thống nhận dữ liệu nên chưa thể gửi. Vui lòng liên hệ trực tiếp qua Google Maps.",fail:"Gửi không thành công. Vui lòng thử lại."},en:{ok:"Thank you! We will contact you soon.",no:"The form is not yet connected to a data endpoint, so it cannot be sent. Please contact us via Google Maps.",fail:"Sending failed. Please try again."}}};
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const els=$$("[data-i]");els.forEach(e=>e.dataset.vi=e.innerHTML);
+let L="vi";
+function setLang(l){L=l;document.documentElement.lang=l;
+ els.forEach(e=>{const k=e.dataset.i;e.innerHTML=l==="vi"?e.dataset.vi:(I18N.en[k]??e.dataset.vi)});
+ $("#lv").classList.toggle("on",l==="vi");$("#le").classList.toggle("on",l==="en");
+ document.title=l==="vi"?"ONE GYM FITNESS – Phòng tập Bắc Ninh":"ONE GYM FITNESS – Bac Ninh Gym";
+ try{localStorage.setItem("lang",l)}catch(e){}}
+$("#lang").onclick=()=>setLang(L==="vi"?"en":"vi");
+try{const s=localStorage.getItem("lang");if(s==="en")setLang("en")}catch(e){}
+// header + menu
+const hd=$("#hd"),nav=$("#nav"),bg=$("#bg");
+addEventListener("scroll",()=>hd.classList.toggle("solid",scrollY>40),{passive:true});
+bg.onclick=()=>{const o=nav.classList.toggle("open");bg.classList.toggle("open",o);bg.setAttribute("aria-expanded",o)};
+$$("nav a").forEach(a=>a.onclick=()=>{nav.classList.remove("open");bg.classList.remove("open")});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+$$(".rv").forEach(e=>io.observe(e));
+// gallery: ảnh thật = div.ph[data-src]
+$$("#gal .ph").forEach(p=>{if(p.dataset.src){const im=new Image();im.src=p.dataset.src;im.loading="lazy";im.alt=p.textContent.trim()||"One Gym Fitness";p.textContent="";p.appendChild(im);
+ p.onclick=()=>{const lb=$("#lb");lb.innerHTML="";const b=new Image();b.src=p.dataset.src;b.alt=im.alt;lb.appendChild(b);lb.classList.add("on")}}});
+$("#lb").onclick=()=>$("#lb").classList.remove("on");
+addEventListener("keydown",e=>{if(e.key==="Escape")$("#lb").classList.remove("on")});
+// form
+const f=$("#f"),msg=$("#msg");
+function show(t){msg.style.display="block";msg.textContent=I18N.msgs[L][t]}
+f.addEventListener("submit",async ev=>{ev.preventDefault();
+ const n=$("#fn"),p=$("#fp");
+ const okN=n.value.trim().length>1,okP=/^(\+?84|0)\d{9}$/.test(p.value.replace(/[\s.\-]/g,""));
+ n.nextElementSibling.style.display=okN?"none":"block";p.nextElementSibling.style.display=okP?"none":"block";
+ if(!okN||!okP)return;
+ if(!FORM_ENDPOINT){show("no");return}
+ try{const r=await fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({name:n.value,phone:p.value,goal:$("#fg").value,message:$("#fm").value,lang:L})});
+  if(r.ok){show("ok");f.reset()}else show("fail")}catch(e){show("fail")}});
+</script>
+</body>
+</html>
